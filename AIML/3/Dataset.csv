@@ -1,0 +1,16 @@
+Age,Income,Student,CR,Buys_Computer
+less than 30,high,no,fair,yes
+less than 30,high,no,excellent,no
+less than 30,medium,yes,fair,yes
+less than 30,medium,yes,excellent,yes
+30 to 40,high,no,fair,no
+30 to 40,high,no,excellent,yes
+30 to 40,medium,no,fair,no
+30 to 40,medium,yes,fair,yes
+40 or more,high,yes,fair,yes
+40 or more,high,yes,excellent,yes
+40 or more,medium,yes,fair,no
+40 or more,medium,no,excellent,no
+less than 30,high,yes,excellent,no
+less than 30,medium,no,fair,no
+30 to 40,high,yes,fair,yes
