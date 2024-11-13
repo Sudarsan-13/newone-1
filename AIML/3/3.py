@@ -19,17 +19,17 @@ print(data)
 # Print the column names
 print(data.columns)
 
-# Prior Probability: P(Buys_Computer)
-prior = data.groupby('Buys_Computer').size().div(len(data))
+# Prior Probability: P(Buys_Iphone)
+prior = data.groupby('Buys_Iphone').size().div(len(data))
 print("Prior Probabilities:")
 print(prior)
 
-# Likelihood for each feature given Buys_Computer = yes or no
+# Likelihood for each feature given Buys_Iphone = yes or no
 likelihood = {}
-likelihood['CR'] = data.groupby(['Buys_Computer', 'CR']).size().div(len(data)).div(prior)
-likelihood['Age'] = data.groupby(['Buys_Computer', 'Age']).size().div(len(data)).div(prior)
-likelihood['Income'] = data.groupby(['Buys_Computer', 'Income']).size().div(len(data)).div(prior)
-likelihood['Student'] = data.groupby(['Buys_Computer', 'Student']).size().div(len(data)).div(prior)
+likelihood['CR'] = data.groupby(['Buys_Iphone', 'CR']).size().div(len(data)).div(prior)
+likelihood['Age'] = data.groupby(['Buys_Iphone', 'Age']).size().div(len(data)).div(prior)
+likelihood['Income'] = data.groupby(['Buys_Iphone', 'Income']).size().div(len(data)).div(prior)
+likelihood['Student'] = data.groupby(['Buys_Iphone', 'Student']).size().div(len(data)).div(prior)
 
 print("\nLikelihoods:")
 print(likelihood)

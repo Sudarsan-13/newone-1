@@ -37,7 +37,7 @@ algorithms = [
     DecisionTreeClassifier(),
     GaussianNB(),
     RandomForestClassifier(),
-    AdaBoostClassifier(),
+    AdaBoostClassifier(algorithm='SAMME'),
     GradientBoostingClassifier()
 ]
 

@@ -16,7 +16,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 
 # Define the classifiers
 rf_clf = RandomForestClassifier(n_estimators=100, random_state=42)
-ada_clf = AdaBoostClassifier(n_estimators=100, random_state=42)
+ada_clf = AdaBoostClassifier(n_estimators=100, random_state=42, algorithm='SAMME')
 gb_clf = GradientBoostingClassifier(n_estimators=100, random_state=42)
 
 # Train and evaluate each classifier individually

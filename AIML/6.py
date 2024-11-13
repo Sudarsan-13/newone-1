@@ -6,9 +6,9 @@ from sklearn.metrics import accuracy_score
 
 # Creating a simple DataFrame
 data = {
-    'Feature1': [2, 3, 10, 6, 8, 11, 5, 9],
-    'Feature2': [3, 6, 7, 8, 3, 9, 4, 10],
-    'Label': [0, 0, 1, 1, 0, 1, 0, 1]
+    'Feature1': [1,5,9,7,11],
+    'Feature2': [3, 5,7,8,2],
+    'Label': [ 1, 1, 0, 0, 1]
 }
 
 df = pd.DataFrame(data)
